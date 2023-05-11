@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="form_data" method="post" enctype="multipart/form-data">
+  이름 : <input type="text" name="st_name"><br>
+  학번 : <input type="text" name="st_id"><br>
+  학과 : <input type="text" name="department"><br>
+  파일1: <input type="file" name="file1"><br>
+  파일2:   <input type="file" name="file2"><br>
+  <input type="submit">
+</form>
+<script >
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+    };
+  }, true);
+</script>
+</body>
+</html>
